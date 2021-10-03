@@ -16,4 +16,9 @@ public class EmployeeTest {
     public void employeeHasName() {
         assertEquals("Jim", employee.getName());
     }
+
+    @Test
+    public void employeeHasRank() {
+        assertEquals(Rank.CAPTAIN, employee.getRank());
+    }
 }
