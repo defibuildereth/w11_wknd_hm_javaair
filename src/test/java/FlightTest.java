@@ -47,5 +47,10 @@ public class FlightTest {
         assertEquals(Plane.AIRBUS420, flight.getPlane());
     }
 
+    @Test
+    public void flightHasAvailableSeats() {
+        assertEquals(599, flight.getAvailableSeats());
+    }
+
     }
 
