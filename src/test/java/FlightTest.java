@@ -25,11 +25,17 @@ public class FlightTest {
         ArrayList<CabinCrewMember> cabinCrew = new ArrayList<>();
         cabinCrew.add(cabinCrewMember);
         flight = new Flight(pilot, cabinCrew, passengers, plane, "EZ123", "Edinburgh", "Vienna", "20:00");
-
     }
+
     @Test
     public void flightHasPilot() {
         assertEquals("Jim", flight.getPilot().getName());
         }
+
+    @Test
+    public void flightHasCabinCrew() {
+        assertEquals(1, flight.getCabinCrew().size());
+    }
+
     }
 
