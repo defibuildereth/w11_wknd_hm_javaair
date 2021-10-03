@@ -16,4 +16,9 @@ public class CabinCrewMemberTest {
     public void cabinCrewMemberHasRank() {
         assertEquals(Rank.FLIGHTATTENDANT, cabinCrewMember.getRank());
     }
+
+    @Test
+    public void cabinCrewMemberCanGiveAnnouncement() {
+        assertEquals("Hi there folks, we are going to crash.", cabinCrewMember.giveAnnouncement("we are going to crash.") );
+    }
 }
